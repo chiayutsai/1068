@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    line-height: 2;
+    font-weight: 300;
+    overflow-x:hidden;
+}
+h1,h2,h3,h4,h5,h6{
+    line-height: 2;
+}
+h3{
+    @include font-size(36px)
+}
+:focus{
+    outline: 0;
+}
+a{
+    display: block;
+    transition: all 0.5s;
+    text-decoration: none;
+    line-height: 1;
+}
+button{
+    background: transparent;
+    border:0px;
+    color:#fff;
+}
+ul,li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+img{
+    display: block;
+    object-fit: cover;
+    height: auto;
+    max-width: 100%;
+}
+.shopicon{
+    width: 30px;
+    height: 30px;
+    filter: brightness(0.0);
+    opacity: 0.5;
+    position: absolute;
+    top: 24px;
+    right: 10px;
+}
+.container{
+    padding: 0 15px;
+}
+
+.carousel-control-next-icon,.carousel-control-prev-icon{
+ 
+    background-size: cover;
+    background-position: center;
+}

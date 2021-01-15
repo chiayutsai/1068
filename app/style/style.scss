@@ -1,0 +1,78 @@
+:root {
+    --bs-nav-link-color: white;
+    --bs-hover-color: #ad9772;
+    --bs-nav-color: rgba(255, 255, 255, 0.3);
+    --bs-scroll-nav-bg-color: rgba(254, 254, 254, 0.85);
+    --bs-scroll-nav-link-color: rgba(0, 0, 0, 0.85);
+    --bs-rwd-nav-bg-color: rgba(18, 18, 18, 0.7);
+    --bs-hamburger-close: #000;
+    --bs-hamburger-open: #fff;
+    --bs-body-font-color:#fff;
+  }
+/* 全背景圖片 */
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url(../images/bg.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-bottom: 20%;
+}
+
+
+
+/* 預設文字顏色 */
+body{
+  color:var(--bs-body-font-color);
+}
+
+
+
+
+  .logo {
+    width: 70px;
+    height: 70px; 
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  /* 選單相關色彩 */
+  .navbar{
+    background-color: var(--bs-nav-color);
+  }
+  .navbar-nav{
+    background-color:var(--bs-rwd-nav-bg-color);
+  }
+  .navbar-toggler span {
+    background:var(--bs-hamburger-close);
+  }
+  .navbar-toggler.open span{
+    background:var(--bs-hamburger-open);
+  }
+  .nav-link{
+   color: var(--bs-nav-link-color); 
+  }
+  .nav-link:hover{
+    color:var(--bs-hover-color);
+  }
+  .scrollNav{
+    background-color:var(--bs-scroll-nav-bg-color)!important;
+  }
+  .scrollNav .nav-link{
+    color:var(--bs-scroll-nav-link-color);
+  }
+  /*# sourceMappingURL=style.css.map */
+  

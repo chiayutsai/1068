@@ -1,0 +1,34 @@
+.lg-backdrop{
+    background-color: rgba(0,0,0,0.8);
+}
+.lightbox,.lightbox--thumbnail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lightbox-item{
+    margin-bottom: 24px;
+    overflow: hidden;
+    border-radius: 4px;
+    img{
+        transition: all 0.5s;
+        transform: scale(1.1);
+    }
+    &:hover{
+        img{
+            transform: scale(1);
+        }
+    }
+}
+.lightbox-hide{
+    display: none;
+    @include media-breakpoint-up(md) {
+        display: block;
+       }
+}
+.lightbox__openBtn{
+
+    @include media-breakpoint-up(md) {
+       display: none;
+      }
+}
