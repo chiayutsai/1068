@@ -1,6 +1,7 @@
 @charset "UTF-8";
 :root {
   --bs-nav-link-color: white;
+  --bs-mobileNav-link-color:white;
   --bs-hover-color: #ad9772;
   --bs-nav-color: rgba(255, 255, 255, 0.3);
   --bs-scroll-nav-bg-color: rgba(254, 254, 254, 0.85);
@@ -8,7 +9,10 @@
   --bs-rwd-nav-bg-color: rgba(18, 18, 18, 0.7);
   --bs-hamburger-close: #000;
   --bs-hamburger-open: #fff;
-  --bs-body-font-color:#fff; }
+  --bs-body-font-color:#fff;
+  --bs-primary:#fff;
+  --bs-secondary:orange
+  ; }
 
 /* 全背景圖片 */
 body:before {
@@ -26,11 +30,19 @@ body:before {
 
 /* 預設文字顏色 */
 body {
-  color: var(--bs-body-font-color); }
+  color: var(--bs-body-font-color);
+  line-height: 2;
+  border-color: #000; }
 
 .logo {
   width: 70px;
   height: 70px; }
+
+a {
+  color: var(--bs-primary); }
+
+a:hover {
+  color: var(--bs-hover-color); }
 
 /* 選單相關色彩 */
 .navbar {
@@ -48,14 +60,48 @@ body {
 .nav-link {
   color: var(--bs-nav-link-color); }
 
-.nav-link:hover {
-  color: var(--bs-hover-color); }
-
 .scrollNav {
   background-color: var(--bs-scroll-nav-bg-color) !important; }
 
 .scrollNav .nav-link {
   color: var(--bs-scroll-nav-link-color); }
+
+.mobileNav .nav-link {
+  color: var(--bs-mobileNav-link-color) !important; }
+
+.nav-link:hover {
+  color: var(--bs-hover-color) !important; }
+
+/* hover 色彩*/
+.hover__bg--primary {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+  .hover__bg--primary:hover {
+    background: var(--bs-primary);
+    color: #fff; }
+
+.hover__bg--secondary {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+  .hover__bg--secondary:hover {
+    background: var(--bs-secondary);
+    color: #fff; }
+
+.hover__text--primary {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+  .hover__text--primary:hover {
+    color: var(--bs-primary); }
+
+.hover__text--secondary {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+  .hover__text--secondary:hover {
+    color: var(--bs-secondary); }
 
 /*# sourceMappingURL=style.css.map */
 
