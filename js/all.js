@@ -1,6 +1,12 @@
 "use strict";
 
 $(document).ready(function () {
+  AOS.init({
+    duration: 700,
+    offset: 400,
+    once: true,
+    easing: 'ease-in-out'
+  });
   var wdth = $(window).width();
   $('.js-totop').css('opacity', 0);
 
