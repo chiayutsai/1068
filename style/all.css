@@ -11481,10 +11481,21 @@ textarea.form-control-lg {
   margin: 0;
   padding: 0; }
 
+html {
+  overflow-y: scroll; }
+
+:root {
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+:root body {
+  position: absolute; }
+
 body {
   line-height: 1.5;
   font-weight: 300;
-  overflow-x: hidden;
+  width: 100vw;
+  overflow: hidden;
   color: var(--bs-body-font-color); }
 
 a {
