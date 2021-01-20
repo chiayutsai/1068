@@ -11483,13 +11483,23 @@ textarea.form-control-lg {
 
 html {
   overflow-y: scroll; }
+  @media (min-width: 769px) {
+    html {
+      overflow-y: unset; } }
 
 :root {
   overflow-y: auto;
   overflow-x: hidden; }
+  @media (min-width: 769px) {
+    :root {
+      overflow-y: unset;
+      overflow-x: unset; } }
 
 :root body {
   position: absolute; }
+  @media (min-width: 769px) {
+    :root body {
+      position: relative; } }
 
 body {
   line-height: 1.5;
@@ -11497,6 +11507,10 @@ body {
   width: 100vw;
   overflow: hidden;
   color: var(--bs-body-font-color); }
+  @media (min-width: 769px) {
+    body {
+      overflow: unset;
+      overflow-x: hidden; } }
 
 a {
   color: var(--bs-primary); }
