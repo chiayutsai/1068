@@ -10,9 +10,11 @@
   --bs-hamburger-close: #000;
   --bs-hamburger-open: #fff;
   --bs-body-font-color:#fff;
-  --bs-primary:red;
-  --bs-secondary:orange
-  ; }
+  --bs-primary:rgb(240, 211, 158);
+  --bs-secondary:orange;
+  --bs-primary-hover:#fff;
+  --bs-secondary-hover:#fff;
+  --bs-border-color:#fff; }
 
 /* 全背景圖片 */
 body:before {

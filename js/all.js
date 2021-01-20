@@ -3,7 +3,7 @@
 $(document).ready(function () {
   AOS.init({
     duration: 700,
-    offset: 400,
+    offset: 250,
     once: true,
     easing: 'ease-in-out'
   });
@@ -133,22 +133,6 @@ $(document).ready(function () {
     rotate: false,
     subHtmlSelectorRelative: true
   });
-  $('.js-hide-thumbnail').lightGallery({
-    selector: '.js-lightbox-item',
-    galleryId: 4,
-    thumbnail: true,
-    autoplay: false,
-    rotate: false,
-    subHtmlSelectorRelative: true
-  });
-  $('.js-hide-box').lightGallery({
-    selector: '.js-lightbox-item',
-    galleryId: 5,
-    thumbnail: false,
-    autoplay: false,
-    rotate: false,
-    subHtmlSelectorRelative: true
-  });
   $('.js-lightbox-btn').click(function (e) {
     e.preventDefault();
     $(this).parent().find('.js-lightbox-item').first().trigger('click');
@@ -157,16 +141,20 @@ $(document).ready(function () {
     e.preventDefault();
     $(this).parent().find('.js-lightbox-item').first().trigger('click');
   });
+  $('.lightbox--hideImg').each(function () {
+    var length = $(this).find($(".js-lightbox-item")).length;
+    var array = $(this).find($(".js-lightbox-item"));
+    console.log(array[1].classList);
+
+    for (var i = 8; i < length; i++) {
+      array[i].parentNode.classList.add('lightbox-hide');
+    }
+  });
   $('.js-tab').each(function () {
     $(this).find('.tab-pane').first().addClass('active');
 
     if ($(this).hasClass('tab__dropdown')) {
-      if ($(this).children('.tab__menu').hasClass('tab__menu--dark')) {
-        $(this).prepend('<a data-toggle="dropdown" class="tab__dropdownBtn tab__dropdownBtn--dark dropdown-toggle js-tab__dropdownBtn" href=""></a>');
-      } else {
-        $(this).prepend('<a data-toggle="dropdown" class="tab__dropdownBtn dropdown-toggle js-tab__dropdownBtn" href=""></a>');
-      }
-
+      $(this).prepend('<a data-toggle="dropdown" class="tab__dropdownBtn dropdown-toggle js-tab__dropdownBtn" href=""></a>');
       var tab_btnText = $(this).find('.tab__menuLink--active').text();
       $(this).find('.js-tab__dropdownBtn').text(tab_btnText);
     }
