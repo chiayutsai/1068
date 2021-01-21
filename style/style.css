@@ -12,8 +12,10 @@
   --bs-body-font-color:#fff;
   --bs-primary:rgb(240, 211, 158);
   --bs-secondary:orange;
+  --bs-info:red;
   --bs-primary-hover:#fff;
   --bs-secondary-hover:#fff;
+  --bs-info-hover:#fff;
   --bs-border-color:#fff; }
 
 /* 全背景圖片 */
